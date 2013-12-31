@@ -1,0 +1,274 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	min-width: 995px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body, td, a, p, .h {
+	font-family: arial,sans-serif;
+}
+
+/*---------------------------------*/
+
+header {
+   	height:60px;
+   	width:100%;
+}
+
+nav ul {
+	list-style: none;
+}
+
+.headernavbar ul {
+	position: absolute;
+	top:15px;
+	right:30px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+nav li {
+	vertical-align: middle;
+	font-family: Futura, Tahoma, sans-serif;
+}
+
+.headernavbar li {
+	display: inline-block;
+	height:21px;
+	width:auto;
+	padding: 4px 5px;
+}
+
+nav a {
+	text-decoration: none;
+	color:#404040;
+	font-size: 13px;
+	text-align: center;
+}
+
+nav a:hover {
+	text-decoration: underline;
+	color:#000000;
+}
+
+.headernavb a {
+	display: inline-block;
+}
+
+.headernavbar .ninebox {
+	padding:0;
+	margin:0 10px 0 5px;
+	height:30px;
+	width:30px;
+	background-image: url('googleimages.png');
+	background-repeat: no-repeat;
+	background-position: -431px -243px;
+	background-size: 536px 341px;
+	opacity:.55;	
+}
+
+.headernavbar .ninebox:hover {
+	opacity: .85;	
+}
+
+.headernavbar .ninebox a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-decoration: none;
+	cursor: default;
+}
+.headernavbar .ninebox a:hover {
+	opacity: .85;
+}
+
+.headernavbar .signin {
+	background-color: #4387fd;
+	border-radius: 2px;
+	border: 1px solid #4387fd;
+}
+
+.headernavbar .signin a {
+	color:#ffffff;
+	font-weight:bold;
+	font-size:13px;
+	padding: 0 9px;
+}
+
+.headernavbar .signin a:hover {
+	color:#ffffff;
+	text-decoration: none;	
+}
+
+#viewport {
+	position: absolute;
+	width: 100%;
+	top:60px;
+	bottom:0;
+}
+
+#gsearch {
+	position: absolute;
+	width:100%;
+	height:100%;
+    min-height: 385px;
+}
+
+#gsearch img {
+	padding-top: 20px;
+	width:700px;
+	height:210px;
+	margin-bottom: 20px;
+}
+
+#gsearch table, #gsearch td {
+	border-color: gray;
+}
+
+#search {
+	position: relative;
+	width:550px;
+	height: 27px;
+	background-color: #fff;
+	border: 1px solid #d9d9d9;
+	border-top-color: #c0c0c0;
+	background-image: url('mic.jpg');
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 20px 23px;
+	padding-right: 5px;
+}
+
+#search:hover {
+	border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+}
+
+#search:focus {
+	border: 2px solid blue;
+}
+
+#search input {
+	position: absolute;
+	background-color: transparent;
+	top:1px;
+	left: 5px;
+	border:1px solid red;
+	width: 100%;
+	font: 17px arial,sans-serif;
+	padding:0;
+	border:none;
+	outline: none;
+}
+
+#search_cell {
+	padding: 2px 0px 1px 5px;
+}
+
+.gsearchbuttons button {
+	width:auto;
+	height:29px;
+	background-color: #f2f2f2;
+	border-color: rgba(0,0,0.0,1);
+	border:1px solid #dcdcdc;
+	border-radius: 2px;
+	padding:0 8px;
+	font-weight:bold;
+	color:#444;
+	margin:16px 8px;
+}
+
+.gsearchbuttons button:hover {
+	border-color: #c6c6c6;
+	color:#222;
+	box-shadow:0 1px 0 rgba(0,0,0,.15) ;
+	background:#f8f8f8;
+}
+
+.gsearchbuttons button:focus {
+	border:1px solid #4d90fe;
+	outline:none;
+	box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+}
+.gsearchbuttons input:hover:focus {
+	box-shadow:0 0 0 1px #fff, 0 1px 1px rgba(0,0,0,.1) ;	
+}
+
+.gsearchbuttons button:active {
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);	
+}
+
+footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	height:40px;
+	background-color: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+}
+
+footer ul {
+	position: absolute;
+	margin:5px 0;
+}
+
+.leftnavbar ul {
+	left:10px;
+}
+
+.rightnavbar ul {
+	right:10px;
+}
+
+footer li {
+	float: left;
+	padding:5px 15px;
+}
+
+.rightnavbar span {
+	color:#b14436;
+}
+
